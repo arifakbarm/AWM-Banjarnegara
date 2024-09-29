@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengelolaan Lalat Buah pada Salak</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        .hero {
+            background-image: url('https://www.example.com/salak-hero.jpg'); /* Ganti URL dengan gambar */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .content-section {
+            padding: 40px;
+        }
+
+        .section-title {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #28a745;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .map-section {
+            height: 400px;
+        }
+
+        /* Animasi */
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Lalat Buah Salak</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#article">Article</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#techniques">Techniques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#map">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#video">Video</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero text-center fade-in">
+        <h1>Inovasi dalam Pengelolaan Lalat Buah: Memperkuat Pertanian Salak di Kabupaten Banjarnegara</h1>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container content-section" id="article">
+        <h2 class="section-title">Pendahuluan</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Salak, atau sering disebut sebagai "snake fruit" karena kulitnya yang bersisik, merupakan salah satu komoditas unggulan yang banyak dibudidayakan di Kabupaten Banjarnegara. Namun, budidaya salak seringkali terkendala oleh serangan Organisme Pengganggu Tumbuhan (OPT), salah satunya adalah lalat buah.</p>
+                <p>Serangan lalat buah dapat menurunkan kualitas hasil panen dan menyebabkan kerugian ekonomi yang signifikan. Oleh karena itu, metode pengelolaan yang lebih berkelanjutan dan ramah lingkungan diperlukan untuk menanggulangi hama ini.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/Salak.jpg" alt="Salak Fruit" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+
+    <!-- Techniques Section with Cards -->
+    <div class="container content-section" id="techniques">
+        <h2 class="section-title">Teknik Pengelolaan Lalat Buah</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sanitasi Kebun</h5>
+                        <p class="card-text">Kebersihan kebun penting untuk memutus siklus hidup lalat buah. Buah yang jatuh harus dimusnahkan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pemasangan Methyl Eugenol</h5>
+                        <p class="card-text">Atraktan yang sangat efektif dalam menarik lalat buah jantan sehingga menurunkan populasi lalat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Penggunaan Umpan Protein Beracun</h5>
+                        <p class="card-text">Menggunakan umpan protein untuk menangkap lalat buah betina sebelum mereka bertelur di buah salak.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="container content-section" id="map">
+        <h2 class="section-title">Lokasi Pengelolaan Lalat Buah</h2>
+        <div class="map-section" id="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3957.10894444544!2d109.73575837404218!3d-7.341661372216609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMjAnMzAuMCJTIDEwOcKwNDQnMTguMCJF!5e0!3m2!1sen!2sid!4v1727541594866!5m2!1sen!2sid" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Slider Section -->
+    <div class="container content-section">
+        <h2 class="section-title">Galeri Kegiatan</h2>
+        <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Bimtek AWM pada salak.jpg" class="d-block w-100" alt="Gambar 1" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Bimtek AWM pada salak1.png" class="d-block w-100" alt="Gambar 2" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Bimtek AWM pada salak2.png" class="d-block w-100" alt="Gambar 3" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Bimtek AWM pada salak3.png" class="d-block w-100" alt="Gambar 4" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Bimtek AWM pada salak4.png" class="d-block w-100" alt="Gambar 5" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Bimtek AWM pada salak5.png" class="d-block w-100" alt="Gambar 6" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Bimtek AWM pada salak6.png" class="d-block w-100" alt="Gambar 7" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Bimtek AWM pada salak7.png" class="d-block w-100" alt="Gambar 8" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Gerakan Pengendalian Skala Luas (AWM) Buah pada Salak.png" class="d-block w-100" alt="Gambar 9" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Gerakan Pengendalian Skala Luas (AWM) Buah pada Salak1.png" class="d-block w-100" alt="Gambar 10" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Gerakan Pengendalian Skala Luas (AWM) Buah pada Salak2.png" class="d-block w-100" alt="Gambar 11" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Gerakan Pengendalian Skala Luas (AWM) Buah pada Salak3.png" class="d-block w-100" alt="Gambar 12" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Gerakan Pengendalian Skala Luas (AWM) Buah pada Salak4.png" class="d-block w-100" alt="Gambar 13" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Gerakan Pengendalian Skala Luas (AWM) Buah pada Salak5.png" class="d-block w-100" alt="Gambar 14" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Gerakan Pengendalian Skala Luas (AWM) Buah pada Salak6.png" class="d-block w-100" alt="Gambar 15" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Gerakan Pengendalian Skala Luas (AWM) Buah pada Salak7.png" class="d-block w-100" alt="Gambar 16" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Gerakan Pengendalian Skala Luas (AWM) Buah pada Salak8.png" class="d-block w-100" alt="Gambar 17" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Gerakan Pengendalian Skala Luas (AWM) Buah pada Salak9.png" class="d-block w-100" alt="Gambar 18" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Koordinasi_Internal_Persiapan_Pemetaan_Lahan_Salak.png" class="d-block w-100" alt="Gambar 19" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Koordinasi_Internal_Persiapan_Pemetaan_Lahan_Salak1.png" class="d-block w-100" alt="Gambar 20" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Koordinasi_Internal_Persiapan_Pemetaan_Lahan_Salak2.png" class="d-block w-100" alt="Gambar 21" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Koordinasi_Internal_Persiapan_Pemetaan_Lahan_Salak3.png" class="d-block w-100" alt="Gambar 22" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Pembuatan larutan umpan protein + insektisida berbahan aktif abamectin.png" class="d-block w-100" alt="Gambar 23" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Pembuatan larutan umpan protein + insektisida berbahan aktif abamectin1.png" class="d-block w-100" alt="Gambar 24" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Pembuatan larutan umpan protein + insektisida berbahan aktif abamectin2.png" class="d-block w-100" alt="Gambar 25" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Pembuatan larutan umpan protein + insektisida berbahan aktif abamectin3.png" class="d-block w-100" alt="Gambar 26" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Pembuatan larutan umpan protein + insektisida berbahan aktif abamectin4.png" class="d-block w-100" alt="Gambar 27" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Pembuatan larutan umpan protein + insektisida berbahan aktif abamectin5.png" class="d-block w-100" alt="Gambar 28" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Pembuatan larutan umpan protein + insektisida berbahan aktif abamectin6.png" class="d-block w-100" alt="Gambar 29" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Pembuatan larutan umpan protein + insektisida berbahan aktif abamectin7.png" class="d-block w-100" alt="Gambar 30" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Perendaman ME block + insektisida berbahan aktif fipronil.png" class="d-block w-100" alt="Gambar 31" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Perendaman ME block + insektisida berbahan aktif fipronil1.png" class="d-block w-100" alt="Gambar 32" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Perendaman ME block + insektisida berbahan aktif fipronil2.png" class="d-block w-100" alt="Gambar 33" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Perendaman ME block + insektisida berbahan aktif fipronil3.png" class="d-block w-100" alt="Gambar 34" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Peta Pemasangan Wooden Block KT. Sido Maju I.png" class="d-block w-100" alt="Gambar 35" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Peta Pemasangan Wooden Block KT. Sido Maju II.png" class="d-block w-100" alt="Gambar 36" style="max-height: 25%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Peta Pemasangan Wooden Block KT. Sido Maju III.png" class="d-block w-100" alt="Gambar 37" style="max-height: 25%;">
+                </div>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="container content-section" id="video">
+        <h2 class="section-title">Video Kegiatan</h2>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/q79ahnArVc0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Pengelolaan Lalat Buah Salak</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
